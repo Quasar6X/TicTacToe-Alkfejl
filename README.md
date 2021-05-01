@@ -41,7 +41,7 @@ A desktop modul egy asztali alkalmazást tartalmaz JavaFX keret rendszerben megv
 _**Az alkalmazás tulajdonságai:**_
 >* A play gombbal lehet új játékot kezdeni. Ez a először a player hozzáadás és törlés oldalra visz, ahonnan az alsó play gombbal lehet
 kiválasztani a játék paramétereit. Az első a tábla mérete, a második és harmadik beállítás a két játékos, a negyedik és őtődik pedig a játék
-időzítői, melyek formátuma hh:mm:ss _(pl. 12:23:59)_. A játék ezután játszható a _**[Játék menete](#a-jtk-menete-)**_ leírtja alapján.
+időzítői, melyek formátuma hh:mm:ss _(pl. 12:23:59)_. A játék ezután játszható a _**[Játék menete](#a-játék-menete-)**_ leírtja alapján.
 >* A játékot meg lehet szakítani idő előtt a File menüből, itt kiválasztható, hogy mentsük-e a visszajátszást.
 >* A help menüben a help almenüben egy egyszerű segítség szöveg ugrik fel. Az about almenüben pedig a github linkem található.
 >* A főképernyőről elérhető **Match History** az összes lejátszott meccset kilistázza. Ezek a matchek törölhetők, és vissza is játszhatók!
