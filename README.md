@@ -51,7 +51,9 @@ A replay gomb megnyomásával elindul a visszajátszás ahol a játék minden l�
 ___
 A webes alkalmazás a Google GSON csomagját használja a válasz objekutom JSON-ná alakításához. A PVP játék befejeződik, ha valamelyik
 játékos böngészője tálcára kerül vagy átnavigál egy másik tabra. Ez egy **FEATURE** nem egy **BUG**, azért történik így mert az utolsó
-biztosan megfigyelhető böngésző esemény a "visibilitychange", ezért ha ez bekövetkezik akkor lebontom mind a kettő player munkamenetét.
+biztosan megfigyelhető böngésző esemény a "visibilitychange", ezért ha ez bekövetkezik akkor lebontom mind a kettő player munkamenetét.<br/>
+A PvP úgy indítható el hogy az egyik munkamenetben a játékos kiválasztja az ellenfelét és a pálya méretet, majd **elindítja** a játékot. Ezután ha másik
+játékos kiválasztja a "Play Vs Human" menüt akkor **automatikusan bedobja** abba a játékba.
 A webes alkalmazás csak pár tekintetben tér el az asztalitól, ezért inkább a különbségeket sorolnám fel.
 >* Először be kell jelentkezni, nem a játék indításakor lehet a játékost kiválasztani.
 >* Nincs meccs visszajátszás funkció.
