@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Digital Dream Fat Skew';
+    src: url('../font/DIGITALDREAMFATSKEW.ttf') format("truetype");
+}
+
+* {
+    font-family: "Digital Dream Fat Skew", serif;
+}

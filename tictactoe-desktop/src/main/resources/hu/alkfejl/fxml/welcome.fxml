@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" styleClass="gradient" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.WelcomeScreenController">
+    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="16.0" HBox.hgrow="ALWAYS">
+            <StackPane prefWidth="200.0">
+                <VBox.margin>
+                    <Insets top="20.0"/>
+                </VBox.margin>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/logo.png"/>
+                </ImageView>
+            </StackPane>
+            <StackPane prefWidth="200.0">
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handlePlay"
+                        text="Play"/>
+            </StackPane>
+            <StackPane prefWidth="200.0">
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleMatchHistory" text="Match History"/>
+            </StackPane>
+            <StackPane prefWidth="200.0">
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleExit"
+                        text="Exit"/>
+            </StackPane>
+        </VBox>
+        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+    </HBox>
+</StackPane>

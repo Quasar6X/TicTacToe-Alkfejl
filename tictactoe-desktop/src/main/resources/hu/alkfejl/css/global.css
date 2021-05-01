@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Digital Dream Fat Skew';
+    src: url('../font/DIGITALDREAMFATSKEW.ttf');
+}
+
+* {
+    -fx-darker: #1D3E53;
+    -fx-dark: #254B62;
+    -fx-light: #476D7C;
+    -fx-lighter: #77ABB7;
+    -fx-accent: #FFC93C;
+}
+
+.root {
+    -fx-background-color: -fx-light;
+}
+
+.label {
+    -fx-text-fill: -fx-lighter;
+}
+
+.btnText {
+    -fx-font-family: 'Digital Dream Fat Skew';
+    -fx-font-size: 24;
+    -fx-text-fill: -fx-lighter;
+}
+
+.topBar {
+    -fx-background-color: -fx-dark;
+    -fx-border-color: -fx-darker;
+    -fx-border-width: 0 0 2 0;
+}
+
+.topRow {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.menu-bar {
+    -fx-background-color: -fx-darker;
+}
+
+.context-menu {
+    -fx-background-color: -fx-darker;
+}
+
+.menu:focused {
+    -fx-text-fill: -fx-darker;
+}
+
+.menu-item:focused {
+    -fx-text-fill: -fx-darker;
+    -fx-background-color: -fx-dark;
+}
+
+.clock {
+    -fx-font-family: 'Digital Dream Fat Skew';
+    -fx-padding: 0 0 10 0;
+    -fx-text-fill: -fx-accent;
+}
+
+.btnTile {
+    -fx-border-color: -fx-darker;
+    -fx-border-width: 2;
+    -fx-cursor: hand;
+}
+
+/*-------------------------------------------------Dialog pane START--------------------------------------------------*/
+
+.dialog-pane *.header-panel {
+    -fx-background-color: -fx-darker;
+}
+
+.dialog-pane {
+    -fx-font-family: "Digital Dream Fat Skew";
+    -fx-background-color: -fx-darker;
+}
+
+.dialog-pane *.button-bar {
+    -fx-background-color: linear-gradient(to bottom, -fx-dark, -fx-lighter);
+}
+
+.dialog-pane *.header-panel *.label {
+    -fx-font-size: 12;
+    -fx-font-family: "Digital Dream Fat Skew";
+}
+
+.dialog-pane .slider .track {
+    -fx-padding: 4;
+    -fx-background-color: -fx-light;
+    -fx-border-width: 2;
+    -fx-border-radius: 2em;
+    -fx-border-color: -fx-lighter;
+}
+
+.dialog-pane .slider .thumb {
+    -fx-padding: 6;
+    -fx-background-color: -fx-light;
+    -fx-border-width: 3;
+    -fx-border-radius: 6em;
+    -fx-border-color: -fx-dark;
+}
+
+.dialog-pane .slider .thumb:pressed {
+    -fx-border-color: -fx-accent;
+}
+
+.dialog-pane .text-field {
+    -fx-font-family: "Digital Dream Fat Skew";
+    -fx-font-size: 12;
+    -fx-background-color: -fx-light;
+    -fx-text-fill: -fx-accent;
+    -fx-prompt-text-fill: -fx-lighter;
+    -fx-alignment: center;
+}
+
+.dialog-pane .text-field:focused {
+    -fx-border-color: -fx-accent;
+    -fx-border-radius: 0.33em;
+}
+
+.dialog-pane .choice-box {
+    -fx-font-family: "Digital Dream Fat Skew";
+    -fx-font-size: 12;
+    -fx-background-color: -fx-light;
+}
+
+.dialog-pane .choice-box .label {
+    -fx-text-fill: -fx-accent;
+}
+
+.dialog-pane .choice-box:focused {
+    -fx-border-width: 1;
+    -fx-border-color: -fx-accent;
+    -fx-border-radius: 0.33em;
+}
+
+.dialog-pane .choice-box .arrow {
+    -fx-background-color: -fx-accent;
+}
+
+/*--------------------------------------------------Dialog pane END---------------------------------------------------*/
+
+.gradient {
+    -fx-background-color: linear-gradient(to bottom right, -fx-light, -fx-darker);
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom right, -fx-light, -fx-dark);
+    -fx-border-color: linear-gradient(to bottom right, -fx-light, -fx-darker);
+    -fx-border-width: 2;
+    -fx-text-fill: -fx-accent;
+    -fx-font-family: 'Digital Dream Fat Skew';
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: -fx-light;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom right, -fx-dark, derive(-fx-darker, -33%));
+    -fx-border-color: linear-gradient(to bottom right, -fx-accent, derive(-fx-accent, -50%));
+}
+
+/*----------------------------------------------------Table START-----------------------------------------------------*/
+
+.table-view .column-header {
+    -fx-background-color: -fx-darker;
+}
+
+.filler {
+    -fx-background-color: -fx-darker;
+}
+
+.table-view {
+    -fx-background-color: -fx-dark;
+}
+
+.table-column {
+    -fx-alignment: center;
+    -fx-text-fill: -fx-accent;
+    -fx-font-family: "Digital Dream Fat Skew";
+    -fx-font-size: 10;
+}
+
+.corner {
+    -fx-background-color: -fx-lighter;
+}
+
+.table-column:odd {
+    -fx-background-color: -fx-dark;
+}
+
+.table-column:even {
+    -fx-background-color: -fx-darker;
+}
+
+.table-view .scroll-bar:pressed {
+    -fx-border-color: -fx-accent;
+    -fx-border-radius: 0.33em;
+    -fx-border-width: 1;
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-background-color: linear-gradient(to bottom, -fx-dark, -fx-lighter);
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-background-color: linear-gradient(to right, -fx-dark, -fx-lighter);
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: -fx-darker;
+}
+
+.table-view .decrement-arrow, .increment-arrow {
+    -fx-background-color: -fx-accent;
+}
+
+.playerButtonBar {
+    -fx-background-color: -fx-lighter;
+}
+/*-----------------------------------------------------Table END------------------------------------------------------*/
+

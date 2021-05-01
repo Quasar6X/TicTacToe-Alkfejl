@@ -1,0 +1,9 @@
+# Project exclude paths
+/.idea
+/tictactoe-core/target/
+/tictactoe-core/logs
+/tictactoe-desktop/target/
+/tictactoe-desktop/logs
+/tictactoe-web/target/
+/tictactoe-web/tictactoe-web.iml
+/package-lock.json

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.BoardController">
+    <top>
+        <VBox fx:id="vbox" prefHeight="70.0" prefWidth="350.0" styleClass="topBar" BorderPane.alignment="CENTER">
+            <MenuBar fx:id="menuBar">
+                <Menu mnemonicParsing="false" text="File">
+                    <MenuItem mnemonicParsing="false" onAction="#handleCloseAndSave" text="Close and Save Replay"/>
+                    <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Close"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <MenuItem mnemonicParsing="false" onAction="#handleHelp" text="Help"/>
+                    <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About"/>
+                </Menu>
+            </MenuBar>
+            <HBox spacing="10.0" styleClass="topRow">
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                        <Label text="Game timer"/>
+                    </StackPane>
+                    <StackPane prefHeight="50.0" prefWidth="200.0">
+                        <Label fx:id="gameTimerLabel" styleClass="clock" text="GAME TIMER"/>
+                    </StackPane>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                        <Label text="Turn timer"/>
+                    </StackPane>
+                    <StackPane prefHeight="50.0" prefWidth="240.0">
+                        <Label fx:id="turnTimerLabel" styleClass="clock" text="TURN TIMER"/>
+                    </StackPane>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                        <Label text="Turn"/>
+                    </StackPane>
+                    <StackPane prefHeight="50.0" prefWidth="200.0">
+                        <Label fx:id="turnLabel" styleClass="clock" text="-"/>
+                    </StackPane>
+                </VBox>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <GridPane fx:id="grid" BorderPane.alignment="CENTER"/>
+    </center>
+</BorderPane>

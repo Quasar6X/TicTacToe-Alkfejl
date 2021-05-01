@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" stylesheets="@../css/global.css"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="hu.alkfejl.controller.PlayerListController">
+    <center>
+        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nameColumn" editable="false" maxWidth="1.7976931348623157E308" prefWidth="300.0"
+                             resizable="false" text="Name" reorderable="false"/>
+                <TableColumn fx:id="actionColumn" editable="false" maxWidth="1.7976931348623157E308" prefWidth="298.0"
+                             resizable="false" reorderable="false"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </center>
+    <bottom>
+        <ButtonBar fx:id="buttonBar" prefHeight="40.0" prefWidth="570.0" styleClass="playerButtonBar"
+                   BorderPane.alignment="CENTER">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#handlePlay" text="Play"/>
+                <Button mnemonicParsing="false" onAction="#handleAddNewPlayer" text="Add new Player"/>
+                <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel"/>
+            </buttons>
+            <padding>
+                <Insets right="10.0"/>
+            </padding>
+        </ButtonBar>
+    </bottom>
+</BorderPane>

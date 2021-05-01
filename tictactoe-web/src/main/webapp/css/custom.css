@@ -1,0 +1,18 @@
+.footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+
+.square {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    text-align: center;
+}
+
+.btn-tile {
+    color: #77ABB7;
+    background-color: #254B62;
+}
