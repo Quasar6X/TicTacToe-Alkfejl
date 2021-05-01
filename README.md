@@ -9,8 +9,10 @@ köszönöm Jacob Fischer-nek **[link](https://pizzadude.dk/site/)** a weboldal�
 betűtípus licensze megtalálható a betűtípus mellett **[itt](tictactoe-desktop/src/main/resources/hu/alkfejl/font/Font%20License.txt)**,
 illetve **[itt](tictactoe-web/src/main/webapp/font/Font%20License.txt)** is.<br/>
 >* A webes modul használatához **[Tomcat 9.0.45-re](https://tomcat.apache.org/download-90.cgi)** van szükség.
->* A projekt JDK 11-en készült.
->* A desktop modul JavaFX 11.0.2-t használ.
+>* A projekt **JDK 11-en** készült.
+>* A desktop modul **JavaFX 11.0.2-t** használ.
+>* A projektben **log4j-t** is használtam több helyen, ez a modulok gyökérkönyvtárában hoz létre minden futtatás után egy
+új logot timestamp-pel a fájl nevén.
 
 ##A játék menete 🎮
 ___
